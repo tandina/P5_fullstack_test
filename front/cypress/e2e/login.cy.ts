@@ -9,20 +9,20 @@ describe("Login spec", () => {
       `${"tourepass"}{enter}{enter}`
     );
   });
-  it('submit button sould be disabled when email input is empty', () => {
-    cy.visit('/login')
+  it("submit button sould be disabled when email input is empty", () => {
+    cy.visit("/login");
 
-    cy.get('input[formControlName=password]').type(`${"tourepass"}`)
-    cy.get('button[type=submit]').should('be.disabled')
-  })
+    cy.get("input[formControlName=password]").type(`${"tourepass"}`);
+    cy.get("button[type=submit]").should("be.disabled");
+  });
 
-  it('submit button sould be disabled when password input is empty', () => {
-    cy.visit('/login')
+  it("submit button sould be disabled when password input is empty", () => {
+    cy.visit("/login");
 
-    cy.get('input[formControlName=email]').type("toure@toure.com")
-    cy.get('button[type=submit]').should('be.disabled')
-  })
-});
+    cy.get("input[formControlName=email]").type("toure@toure.com");
+    cy.get("button[type=submit]").should("be.disabled");
+  });
+
   it("Login successfull", () => {
     cy.visit("/login");
 
