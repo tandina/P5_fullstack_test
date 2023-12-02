@@ -86,10 +86,11 @@ Report is available here:
 before you start unitray testing, if ng serve is running stop it first.
 
 Launching test on terminal and get a report:
-> npm run test:report
+> npx jest --coverage
 
-Report is available here: 
-P5_fullstack_test\front\test-report.html
+Report is available here:
+P5_fullstack_test\front\coverage\jest\lcov-report\index.html
+
 
 Launching test on terminal without report:
 > npm run test
