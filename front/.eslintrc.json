@@ -12,7 +12,8 @@
         "project": [
           "tsconfig.json"
         ],
-        "createDefaultProgram": true
+        "createDefaultProgram": true,
+        "ecmaVersion": 2015
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
