@@ -100,6 +100,10 @@ for following change:
 > npm run test:watch
 
 #### JUnit 5 test
+once everything is installed
+  in maven terminal execute this command:
+  > mvn install
+
 test on IntelliJ
 in maven widget, click on install to launch every test and generate a jacoco report.
 
